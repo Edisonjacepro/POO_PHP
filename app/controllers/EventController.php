@@ -27,7 +27,7 @@ class EventController {
             $this->eventModel->addEvent($name, $date, $description);
     
             // Redirection après l'ajout de l'événement
-            header('Location: /POO_PHP/event-manager/public/index.php?page=index'); // Redirige vers la page d'accueil (ou liste des événements)
+            header('Location: /POO_PHP/public/index.php?page=index'); // Redirige vers la page d'accueil (ou liste des événements)
             exit(); // Assure-toi d'arrêter le script ici pour éviter toute exécution supplémentaire
         }
     
@@ -59,7 +59,7 @@ class EventController {
                     
                     if ($updateStatus) {
                         // Rediriger vers la page d'affichage des événements
-                        header('Location: /POO_PHP/event-manager/public/index.php?page=index');
+                        header('Location: /POO_PHP/public/index.php?page=index');
                         exit;
                     } else {
                         echo "Erreur lors de la mise à jour de l'événement.";

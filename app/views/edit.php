@@ -1,4 +1,4 @@
-<form method="POST" action="/POO_PHP/event-manager/public/index.php?page=edit&id=<?php echo $event['id']; ?>">
+<form method="POST" action="/POO_PHP/public/index.php?page=edit&id=<?php echo $event['id']; ?>">
     <label for="name">Nom de l'événement:</label>
     <input type="text" id="name" name="name" value="<?php echo $event['name']; ?>" required>
     
